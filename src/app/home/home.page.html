@@ -5,22 +5,32 @@
 </ion-header>
 
 <ion-content padding>
-<ion-button color="danger" fill="outline" shape="round">Add Todo</ion-button>
-<ion-fab vertical="top" horizontal="end" slot="fixed">
-  <ion-fab-button>
-    <ion-icon name="add"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
-<ion-list>
-  <ion-item *ngFor="let item of [1,1,1,1,1,1,1]; let i=index">
-    <ion-badge slot="start">{{i + 1}}</ion-badge>
-    <ion-label>
-      <h2>Lreom</h2>
-     <p>Loreom Ipsun</p>
-    </ion-label>
-    <ion-badge slot="end" color="danger">
-      <ion-icon name="trash"></ion-icon>
-    </ion-badge>
-  </ion-item>
-</ion-list>
+
+  <ion-card *ngFor="let item of [1,1,1,1,1,1,1]; let i=index">
+    <ion-img src="/assets/dummy.jpeg"></ion-img>
+    <ion-card-content>
+      <ion-card-title>
+        Lorem
+      </ion-card-title>
+      <p>Lorem tem, ipsum lorol ahora si que se puede apreciar la vista, con esos lagos!</p>
+    </ion-card-content>
+  </ion-card>
+  <!-- <ion-button color="danger" fill="outline" shape="round">Add Todo</ion-button>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-list>
+    <ion-item *ngFor="let item of [1,1,1,1,1,1,1]; let i=index">
+      <ion-badge slot="start">{{i + 1}}</ion-badge>
+      <ion-label>
+        <h2>Lreom</h2>
+      <p>Loreom Ipsun</p>
+      </ion-label>
+      <ion-badge slot="end" color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </ion-badge>
+    </ion-item>
+  </ion-list> -->
 </ion-content>
